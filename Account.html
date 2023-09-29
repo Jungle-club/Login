@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Signup Page</title>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+</head>
+<body>
+  <h1>Login/Signup Page</h1>
+
+  <div id="loginDiv">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" /><br>
+    <input type="password" id="loginPassword" placeholder="Password" /><br>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="signupDiv">
+    <h2>Signup</h2>
+    <input type="email" id="signupEmail" placeholder="Email" /><br>
+    <input type="password" id="signupPassword" placeholder="Password" /><br>
+    <button onclick="signup()">Signup</button>
+  </div>
+
+  <div id="userDiv">
+    <h2>Welcome, <span id="userEmail"></span>!</h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
